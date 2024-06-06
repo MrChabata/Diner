@@ -2,40 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInteraction : MonoBehaviour
+public class EnableDoorOpening : MonoBehaviour
 {
-    private bool inTrigger;
-    public GameObject image;
-    public GameObject liltxt;
-    public CharecterDialogueController cdc;
-    public AudioSource audioSource;
-
     // Start is called before the first frame update
+    public DoorOpening doorOpening;
+    public Inventory inventory;
+    private bool inTrigger;
+    public string key;
     void Start()
     {
         inTrigger = false;
     }
-
+        
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
-            image.SetActive(true);
-            cdc.DisableMovement();
-            audioSource.Play();
+            if (inventory.UseItem(key) == true)
+            {
+                doorOpening.enabled = true;
+            }
+
         }
+        
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        liltxt.SetActive(true);
         inTrigger = true;
     }
 
     public void OnTriggerExit(Collider other)
     {
-        liltxt.SetActive(false);
         inTrigger = false;
     }
 }

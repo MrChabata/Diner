@@ -2,15 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInteraction : MonoBehaviour
+public class EnableStashOpening : MonoBehaviour
 {
+    public Inventory inventory;
     private bool inTrigger;
-    public GameObject image;
-    public GameObject liltxt;
-    public CharecterDialogueController cdc;
-    public AudioSource audioSource;
-
-    // Start is called before the first frame update
     void Start()
     {
         inTrigger = false;
@@ -21,21 +16,22 @@ public class ItemInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
-            image.SetActive(true);
-            cdc.DisableMovement();
-            audioSource.Play();
+
+            if (inventory.UseItem("Crowbar") == true)
+            {
+                print("Curscene");
+            }
         }
+
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        liltxt.SetActive(true);
         inTrigger = true;
     }
 
     public void OnTriggerExit(Collider other)
     {
-        liltxt.SetActive(false);
         inTrigger = false;
     }
 }
