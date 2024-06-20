@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewBehaviourScript1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("Diner");
+        SceneManager.LoadScene("Menu");
     }
 
     // Update is called once per frame

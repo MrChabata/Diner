@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnableStashOpening : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class EnableStashOpening : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && inTrigger == true)
         {
 
-            if (inventory.UseItem("Crowbar") == true)
+            if (inventory.UseItem("Мантировка") == true)
             {
-                print("Curscene");
+                SceneManager.LoadScene("FinalCutScene");
             }
         }
 

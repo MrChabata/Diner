@@ -3,17 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class MenuUIController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("Diner");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void ExitGame()
+    {
+        print("exitgame");
+        Application.Quit();
+    }
+
+    public void StartGame()
+    {
+        print("startgame");
+        SceneManager.LoadScene("CutScene");
     }
 }
