@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.05323167, g: 0.05471248, b: 0.05524063, a: 1}
+  m_IndirectSpecularColor: {r: 0.0579731, g: 0.05912976, b: 0.05954416, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2614,7 +2614,7 @@ Transform:
   m_Children:
   - {fileID: 1333938092}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 41.168, y: -127.362, z: -4.459}
 --- !u!1 &276349557
 GameObject:
@@ -3026,7 +3026,7 @@ Transform:
   m_Children:
   - {fileID: 370212853}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &304442464
 GameObject:
@@ -8519,7 +8519,7 @@ Transform:
   m_Children:
   - {fileID: 1087681988}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 359, y: 359, z: 359}
 --- !u!114 &979250817
 MonoBehaviour:
@@ -13769,7 +13769,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1476504249
 MonoBehaviour:
@@ -16371,7 +16371,7 @@ Transform:
   m_Children:
   - {fileID: 1105112022}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -2.683, y: 2.228, z: 0.245}
 --- !u!1 &1838961755 stripped
 GameObject:
@@ -17735,7 +17735,7 @@ Transform:
   - {fileID: 1123433062}
   - {fileID: 1120414622}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.52}
 --- !u!1 &2115950788 stripped
 GameObject:
@@ -18284,7 +18284,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4490257851619439 stripped
 Transform:
@@ -18528,7 +18528,7 @@ Transform:
   - {fileID: 1744606427042633121}
   - {fileID: 4082112314114411260}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 4, z: 0}
 --- !u!4 &543450652940146238
 Transform:
